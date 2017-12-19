@@ -1,0 +1,514 @@
+@charset "utf-8";
+/****************************************projectText star*/
+#projectText .main .item{
+	padding: 0;
+	background: #eee;
+}
+#projectText .main .item div{
+	padding: 0;
+}
+#projectText .col-sm-4 .panel,#projectText .col-sm-4 .panel-body{
+	border: 0;
+	margin: 0;
+}
+#projectText .col-sm-4 .panel-heading{
+	border-radius: 0;
+	border-bottom: 1px solid #fff;
+}
+#projectText .main .item div img{
+	max-height: 100%;
+}
+#projectText .main .item .text{
+	padding: 10px 15px;
+	font-size: 16px;
+	line-height: 1;
+}
+#projectText .main .item .text span{
+	display: inline-block;
+	width: 80px;
+}
+#projectText .main .item .text a{
+	display: inline-block;
+	text-align: center;
+	width: 80px;
+	height: 26px;
+	font-size:18px;
+	line-height: 26px;
+	color: #fff;
+}
+#projectText .main .item .text .hot{
+	background: #1926da;	
+}
+#projectText .main .item .text .more{
+	background: #bfbfbf;
+}
+#projectText .item{
+	transition: .3s;
+}
+#projectText .item:hover{
+	box-shadow: 0 0 15px #aaa;
+}
+@media only screen and (min-width: 1200px) {
+	#projectText .main .item .text p:last-of-type{
+		padding-top: 0;
+	}
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+	#projectText .main .item .text{
+		padding-bottom: 30px;		
+	}
+	#projectText .main>div:nth-of-type(odd){
+		border-right:5px solid #fff;
+	}
+	#projectText .main>div:nth-of-type(even){
+		border-left:5px solid #fff;
+	}
+	#projectText .main .item{
+		margin-bottom: 10px;
+	}
+}
+@media only screen and (max-width: 768px) {	
+	#projectText .main>div img{
+		width: 100%;
+	}
+	#projectText .main .item .text{
+		padding-bottom: 35px;		
+	}
+	#projectText .main>div{
+		border-left:15px solid #fff;
+		border-right:15px solid #fff;
+	}
+	#projectText .main .item{
+		margin-bottom: 10px;
+	}
+	#projectText .main .item .text span{
+		width: 140px;
+	}
+}
+/****************************************projectText end*/
+/****************************************teamInteroduction star*/
+.carousel .text img{
+	padding: 5px;
+	border: 1px solid #000;
+	max-height: 200px;
+}
+#banner .img img{
+	max-height: 340px;
+}
+.carousel .carousel-control{
+	background: none;
+	color: #999999;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel .carousel-control .left{
+	text-align: left;
+}
+.carousel .carousel-control .left{
+	text-align: right;
+}
+.carousel .carousel-indicators{
+	width: 100%;
+	left: 0;
+	margin:0 ;
+	bottom: 0;
+	transform: translateY(90%);
+}
+.carousel .carousel-indicators li{
+	padding: 10px;
+	width: calc(100% / 8 - 0px);
+	height: auto;
+	background: none;
+	border: 0;
+}
+.carousel .carousel-indicators li img{
+	margin: 0 auto;
+	border-radius: 50%;
+	padding: 0;
+	 box-shadow: 0 0 0 3px #fff;
+	 transition: all .35s;
+}
+.carousel .carousel-indicators li.active img{
+	box-shadow: 0 0 0 3px #ff0000;
+}
+@media only screen and (min-width:1200px ) {
+	
+	.carousel .img{
+		padding: 0 40px;
+	}
+	.carousel .text{
+		padding: 40px;
+		font-size: 16px;
+	}		
+}
+/*#banner .img img{*/
+	/*max-height: 374px;*/
+/*}*/
+#teamInteroduction .dowebok {
+	width: 100%;
+	height: 100px;
+	margin: 20px auto;
+	font-size: 14px;
+}
+#teamInteroduction .dowebok ol{
+	line-height: 30px;
+	letter-spacing: 2px;
+}
+#teamInteroduction .bounce{
+	animation: bounce .5s infinite linear;
+	-webkit-animation: bounce .5s infinite linear;
+	position: relative;
+}
+@keyframes bounce {
+	0%{left:30px}
+	100%{left:0}
+}
+@-webkit-keyframes bounce {
+	0%{left:30px}
+	100%{left:0}
+}
+#teamInteroduction .col-sm-12 > p{
+	text-indent: 2em;
+}
+.dowebok1{
+	margin: 20px auto;
+}
+.dowebok1 .nomarl{
+	display: inline-block;
+	white-space: normal;
+	width: 430px;
+	height: 320px;
+	padding: 15px;
+	position: relative;
+	z-index: 1;
+	vertical-align: top;
+}
+.dowebok1 .nomarl a{
+	background: rgb(70,89,243);
+	color: white;
+}
+.dowebok1 .nomarl:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(200,200,200,.3);
+	z-index: -1;
+	opacity: 0;
+	transition: .3s;
+}
+.dowebok1 .nomarl:hover:before{
+	opacity: 1;
+}
+.dowebok1 img{
+	float: left;
+	max-height: 200px;
+	margin: 0 5px 15px;
+}
+
+@media only screen and (min-width:768px ) {
+	#teamInteroduction{
+		padding-bottom: 190px;
+	}
+	#teamInteroduction .address{
+		margin-top: 150px;
+	}
+	#teamInteroduction .item{
+		height: 350px;
+	}
+	.carousel .text{
+		padding: 10px;	
+		font-size: 16px;
+	}
+	#banner .img{
+		text-align: center;
+	}
+}
+.carousel .text p span{
+	display: block;
+}
+#teamInteroduction .active{
+	margin: 1px;
+}
+@media only screen and (max-width:768px ) {
+
+	#teamInteroduction .item{
+		padding-right: 5px;
+		min-height: 260px;
+	}
+	.carousel .text img{
+		top: 0;	
+	}
+	.carousel .text{
+		padding: 10px;	
+		font-size: 12px;
+	}	
+	.carousel .text p{
+		margin-bottom: 5px;
+	}
+	.carousel .text p span{
+		display: inline;
+	}
+	.carousel .text p a{
+		display: block;
+	}
+}
+
+/****************************************teamInteroduction end*/
+/****************************************investNews star*/
+#investNews{
+	margin-bottom: 40px;
+}
+
+#investNews .toNews,#wonderful .toWonderful{
+	background:rgb(70,82,243);
+	border: 0;
+}
+#investNews .col-xs-5 img{
+	width: 100px;
+	height: 100px;
+}
+#investNews .main{
+	background: url(../images/new_bg_03.jpg) repeat-y center top;
+	padding: 50px 15px;
+}
+#investNews .main .item .bg{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);	
+}
+#investNews .main .item:nth-of-type(odd){
+	margin-right: 10px;
+}
+#investNews .main .item:nth-of-type(odd) .bg{
+	right: -8px;
+}
+#investNews .main .item:nth-of-type(even) .bg{
+	left: -8px;
+}
+#investNews .main .item:nth-of-type(odd) .img{
+	float: right;
+}
+#investNews .img{
+	border: 8px solid #fff;
+	border-radius:2px ;
+	box-shadow: 0 0 5px #999;
+}
+#investNews .main .time{
+	color: #f49a45;
+	line-height: 40px;
+	font-size: 20px;
+}
+#investNews .main .text span{
+  display:-webkit-box;   
+  -webkit-box-orient:vertical;   
+  -webkit-line-clamp:3;   
+  overflow:hidden; 
+}
+#projectText img{
+	margin: 0 auto 10px;
+}
+#projectText{
+	padding-bottom: 50px;
+}
+#projectText h3{
+	margin-top: 5px;
+}
+#projectText .list-group-item:hover,#projectText .active,#projectText .panel-heading{
+	background: rgb(70,82,243);
+}
+
+#projectText .list-group-item:hover a,#projectText .active a,#projectText .panel-heading{
+	color: #fff;
+}
+#projectText p{
+	text-indent: 2em;
+}
+#projectText .main{
+	margin-top: 15px;
+}
+#projectText .main .text .row{
+	margin: 0 10px;
+}
+#projectText .col-xs-5,#projectText .col-xs-7{
+	margin-bottom: 10px;
+}
+
+.enroll .panel{
+	background: #eee;
+	padding: 15px;
+	font-size: 14px;
+}
+.enroll .panel img{
+	margin: 0 auto;
+	max-height: 300px;
+}
+.registration{
+	width: calc(100% - 30px);
+	margin:  0 auto;
+}
+[type='submit']{
+	background: rgb(70,82,243);
+	border: 0;
+}
+.registration .bg-danger{
+	padding: 5px 10px;
+	margin-top: 10px;
+	display: none;
+}
+@media only screen and (max-width:768px ) {
+	#investNews .main{
+		background:none;	
+		padding: 20px;	
+	}
+	#investNews .main .item .bg{
+		display: none;
+	}
+	#investNews .main .item{
+		margin-right: 0 !important;
+		float: none !important;
+	}
+	#investNews .main .item .img{
+		float: none !important;
+	}
+	#investNews .main .item .col-xs-5{
+		text-align: center;
+		margin: 10px auto;
+	}
+}
+/****************************************investNews end*/
+
+/* ********************customized start******************** */
+#customized img{
+	margin: 0 auto;
+}
+#customized p{
+	margin: 15px 0;
+}
+#customized .entertainment h5{
+	height: 40px;
+	line-height: 20px;
+}
+@media (min-width: 768px) {
+	#customized .trip > div{
+		height: 570px;
+	}
+	#customized .col-xs-4,#customized .col-sm-4{
+		padding: 15px 15px 0;
+	}
+	#customized .col-xs-4:hover,#customized .col-sm-4:hover{
+		box-shadow: 2px 0 3px #ccc,0 2px 3px #ccc,-2px 0 3px #ddd,0 -2px 3px #ddd;
+	}
+}
+#customized .customized-title{
+	margin: 15px auto 25px;
+}
+#customized .customized-title h4{
+	position: relative;
+	width: 25%;
+	margin: 0 auto;
+	line-height: 1.4;
+	background: white;
+	border: 2px solid rgba(255,107,168,.8);
+	box-shadow: 2px 0 2px #ffdbef,
+	-2px 0 2px #ffdbef,
+	0 2px 2px #ffdbef,
+	0 -2px 2px #ffdbef,
+	2px 0 2px #ffdbef inset,
+	-2px 0 2px #ffdbef inset,
+	0 2px 2px #ffdbef inset,
+	0 -2px 2px #ffdbef inset;
+	-webkit-box-shadow: 2px 0 2px #ffdbef,
+	-2px 0 2px #ffdbef,
+	0 2px 2px #ffdbef,
+	0 -2px 2px #ffdbef,
+	2px 0 2px #ffdbef inset,
+	-2px 0 2px #ffdbef inset,
+	0 2px 2px #ffdbef inset,
+	0 -2px 2px #ffdbef inset;
+}
+#customized .customized-title h4:before,#customized .customized-title h4:after{
+	display: block;
+	content: '';
+	position: absolute;
+	width: 150%;
+	border-top: 2px solid rgba(255,107,168,.8);
+	box-shadow: 2px 0 2px #ffdbef,
+	-2px 0 2px #ffdbef,
+	0 2px 2px #ffdbef,
+	0 -2px 2px #ffdbef,
+	2px 0 2px #ffdbef inset,
+	-2px 0 2px #ffdbef inset,
+	0 2px 2px #ffdbef inset,
+	0 -2px 2px #ffdbef inset;
+	-webkit-box-shadow: 2px 0 2px #ffdbef,
+	-2px 0 2px #ffdbef,
+	0 2px 2px #ffdbef,
+	0 -2px 2px #ffdbef,
+	2px 0 2px #ffdbef inset,
+	-2px 0 2px #ffdbef inset,
+	0 2px 2px #ffdbef inset,
+	0 -2px 2px #ffdbef inset;
+	top: 10px;
+	z-index: -1;
+}
+#customized .customized-title h4:before{
+	left: -150%;
+}
+#customized .customized-title h4:after{
+	right: -150%;
+}
+
+/* ********************customized end******************** */
+
+/* ********************investNews start******************** */
+#wonderful{
+	position: relative;
+}
+
+#wonderful .col-sm-4{
+	margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+	#wonderful .rotate{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgb(70,82,243);
+		padding: 15px;
+		color: #fff;
+		z-index: -1;
+		transform: rotateY(-180deg);
+		transition: .3s;
+		opacity: 0;
+	}
+	#wonderful .col-sm-4:hover .rotate{
+		transform: rotateY(0deg);
+		opacity: 1;
+	}
+	#wonderful .col-sm-4:hover img{
+		transition: .3s;
+		transform: rotateY(180deg);
+		opacity: 0;
+	}
+}
+@media (max-width: 768px) {
+	#wonderful .col-sm-4 img{
+		/*display: none;*/
+	}
+	#wonderful .rotate{
+		transform: rotateY(0deg)
+		opacity: 1;
+	}
+}
+
+
+#wonderful .toWonderful{
+	margin-top: 50px;
+}
+/* ********************investNews end******************** */
